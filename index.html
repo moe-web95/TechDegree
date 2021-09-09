@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" 
-    rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap"
+    rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>THE CODE REVIEW</title>
 </head>
 <body>
     <h1>THE CODE REVIEW</h1>
     <h2>Signup for our newsletter</h2>
-    <p>Get the latest news on how your code is doing right in your inbox </p><hr id=break> 
+    <p>Get the latest news on how your code is doing right in your inbox </p><hr id=break>
     <form  class="registration" action="index.html" method="post">
         <fieldset class="contact-info">
             <legend>Contact Information</legend>
@@ -50,7 +50,7 @@
             </div>
             <div class="form-group zip">
               <label for="zip">Zip Code</label>
-              <input type="number" id="zip" name="user_zip">
+              <input type="text" id="zip" name="user_zip">
             </div>
         </fieldset><hr>
         <fieldset class="newsletter">
@@ -63,7 +63,7 @@
             <div class="check">
                 <input type="checkbox" id="cssnews" name="cssnews">
                 <label for="cssnews">CSS News</label>
-        
+
             </div>
             <div class="check">
                 <input type="checkbox" id="javascriptnews" name="javascriptnews">
@@ -71,23 +71,23 @@
             </div>
             <p>Newsletter format</p>
             <div class="check">
-                <input type="radio" id="html" name="user_html_plain_text"> 
+                <input type="radio" id="html" name="plain">
                 <label for="html">HTML</label>
             </div>
             <div class="check">
-                <input type="radio" id="plaine" name="user_html_plain_text"> 
+                <input type="radio" id="plaine" name="plain">
                 <label for="plaine">Plaine text</label>
             </div><br>
             <div class="check">
               <label for="text">Other topics you'd like to hear about</label><br>
               <textarea id="text" name="user_idea" ></textarea><br>
-            </div> 
+            </div>
             <div class="check">
             <button class="Signup" type="button">Sign Up</button>
             <p class="copy">copyright The Code Review</p>
           </div>
         </fieldset>
-    </form>   
-    
+    </form>
+
 </body>
 </html>
