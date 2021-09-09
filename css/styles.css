@@ -11,8 +11,8 @@ body{
     font-weight: 400;
     background-color: #f5f5dc;
     color: 	#000;
-    
-    
+
+
 }
 /* type selector*/
  h1{
@@ -35,7 +35,7 @@ body{
      background-color: green;
      color:cornsilk;
      width:100%;
-     
+
      border:1px solid black;
  }
  /* Directly child*/
@@ -62,7 +62,7 @@ textarea:focus{
 hr{
     border:1px solid black;
 }
-  
+
 /* -----------Class selector-------
 -----------------------------------*/
 
@@ -122,8 +122,8 @@ hr{
     .form-group label{
         flex-basis:25%;
         height: 50px;
-        margin:0 auto;
     }
+
     #state {
         flex-grow: 1;
         margin-bottom: 10px;
@@ -133,6 +133,6 @@ hr{
 }
 .zip{
     text-align: left;
-    
+
 }
-   
+}
