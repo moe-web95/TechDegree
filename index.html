@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap" 
+    rel="stylesheet"> 
+    <link href="css/styles.css" rel="stylesheet">
+    <title>THE CODE REVIEW</title>
+</head>
+<body>
+    <h1>THE CODE REVIEW</h1>
+    <h2>Signup for our newsletter</h2>
+    <p>Get the latest news on how your code is doing right in your inbox </p><hr id=break> 
+    <form  class="registration" action="index.html" method="post">
+        <fieldset class="contact-info">
+            <legend>Contact Information</legend>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="user_name" placeholder="required"><br><br>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input  type="email"  id="email" name="user_email" placeholder="required"><br><br>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="user_phone"><br><br>
+            </div>
+            <div class="form-group">
+            <label for="address">Street Address</label>
+            <input type="text" id="address" name="user_address"><br><br>
+            </div>
+            <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city"><br><br>
+            </div>
+            <div class="form-group">
+              <label for="state">State</label>
+              <select id="state" name="user_state">
+                <option value=" ">Choose State</option>
+                <option value="alabama">Alabama</option>
+                <option value="california">California</option>
+                <option value="florida">Florida</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="nevada">Nevada</option>
+                <option value="washington">Washington</option>
+            </select><br><br>
+            </div>
+            <div class="form-group zip">
+              <label for="zip">Zip Code</label>
+              <input type="number" id="zip" name="user_zip">
+            </div>
+        </fieldset><hr>
+        <fieldset class="newsletter">
+            <legend>Newsletter</legend>
+            <p>Select the newsletters you would like to receive</p>
+            <div class="check">
+               <input type="checkbox" id="htmlnews" name="htmlnews">
+                <label for="htmlnews">HTML News</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" id="cssnews" name="cssnews">
+                <label for="cssnews">CSS News</label>
+        
+            </div>
+            <div class="check">
+                <input type="checkbox" id="javascriptnews" name="javascriptnews">
+                <label for="javascriptnews">Javascript News</label>
+            </div>
+            <p>Newsletter format</p>
+            <div class="check">
+                <input type="radio" id="html" name="user_html_plain_text"> 
+                <label for="html">HTML</label>
+            </div>
+            <div class="check">
+                <input type="radio" id="plaine" name="user_html_plain_text"> 
+                <label for="plaine">Plaine text</label>
+            </div><br>
+            <div class="check">
+              <label for="text">Other topics you'd like to hear about</label><br>
+              <textarea id="text" name="user_idea" ></textarea><br>
+            </div> 
+            <div class="check">
+            <button class="Signup" type="button">Sign Up</button>
+            <p class="copy">copyright The Code Review</p>
+          </div>
+        </fieldset>
+    </form>   
+    
+</body>
+</html>

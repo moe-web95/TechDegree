@@ -1,0 +1,138 @@
+/* Universe selector*/
+*{
+    box-sizing: border-box;
+}
+
+/* remove body margin default by browser*/
+body{
+    margin: 0 auto;
+    max-width: 768px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    background-color: #f5f5dc;
+    color: 	#000;
+    
+    
+}
+/* type selector*/
+ h1{
+     font-size: 18px;
+     text-align: center;
+     background-color:black;
+     color:white;
+ }
+ h2{
+     margin: 0 auto;
+     padding:5px;
+     text-align: center;
+     font-size: 18px;
+     font-weight: bold;
+ }
+ button{
+     padding:19px 39px 18px 39px;
+     font-size: 18px;
+     text-align: center;
+     background-color: green;
+     color:cornsilk;
+     width:100%;
+     
+     border:1px solid black;
+ }
+ /* Directly child*/
+ body>p{
+    margin: 0 auto;
+    padding:5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* input and attribute selector*/
+input{
+    border: 1px solid black;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    text-align: left;
+    border:2px solid lightblue;
+}
+[placeholder="required"]{
+    text-align: right;
+}
+hr{
+    border:1px solid black;
+}
+  
+/* -----------Class selector-------
+-----------------------------------*/
+
+.contact-info {
+    padding: 50px 50px 35px 50px;
+}
+.contact-info .form-group{
+    display:flex;
+    flex-direction: column;
+}
+.contact-info label{
+    margin-bottom: 10px;
+}
+.contact-info input{
+    height:50px;
+    margin-bottom: 15px;
+    width:100%;
+}
+.copy{
+    font-size: 8px;
+    text-align: center;
+}
+.newsletter, .check{
+    padding:10px;
+    margin:10px auto;
+}
+
+
+/* ------ID selector------
+-------------------------*/
+#state{
+    height:50px;
+    border:1px solid black;
+}
+#text{
+    margin-top: 5px;
+    padding:40px;
+    width:100%;
+}
+#zip{
+    max-width: 50%;
+}
+#break{
+    border: 3px solid black; /* ---line break <hr>----*/
+}
+
+/* --------ADD Media queries------
+-------------------------------*/
+@media (min-width:768px){
+    .contact-info .form-group{
+      flex-direction:row;
+}
+   .form-group input{
+        flex-grow:1;
+        flex-basis: 75%;
+    }
+    .form-group label{
+        flex-basis:25%;
+        height: 50px;
+        margin:0 auto;
+    }
+    #state {
+        flex-grow: 1;
+        margin-bottom: 10px;
+    }
+    #zip{
+    max-width: 25%;
+}
+.zip{
+    text-align: left;
+    
+}
+   
